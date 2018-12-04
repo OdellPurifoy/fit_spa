@@ -1,4 +1,19 @@
 <p id="notice"><%= notice %></p>
+<h1><%= @post.title %></h1>
 
-<%= link_to 'Edit', edit_post_path(@post) %> |
+<p>
+  <strong>Title:
+  </strong>
+  <%= @post.title %><br/>
+  Created Date:
+  <%= @post.created_at %><br/>
+</p>
+
+<strong>Post</strong>
+<p><%= @post.body %></p>
+
+<hr/>
+
+<%= link_to 'Edit', edit_post_path(@post) %>
+|
 <%= link_to 'Back', posts_path %>

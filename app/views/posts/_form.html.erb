@@ -13,10 +13,14 @@
 <% end %>
 
 <div class="actions">
-  Title:
-  <%= form.text_field :title %><br/>
-  Post:
-  <%= form.text_area :body %><br/>
+  <p>
+    <%= form.label :title %>
+    <%= form.text_field :title %><br/>
+  </p>
+  <p>
+    <%= form.label :body %>
+    <%= form.text_area :body %><br/>
+  </p>
   <%= form.submit %>
 </div>
 <% end %>

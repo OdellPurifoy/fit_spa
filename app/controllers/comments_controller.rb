@@ -4,4 +4,8 @@ class CommentsController < ApplicationController
     @comment = @post.comments.create(params[:comment]).permit(:name, :body)
     redirect_to post_path(@post)
   end
+
+  def update; end
+
+  def destroy; end
 end
